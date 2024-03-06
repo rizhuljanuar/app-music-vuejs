@@ -69,7 +69,7 @@ export default {
     }
   },
   beforeRouteLeave(to, from, next) {
-    if (!this.updateUnsavedLeave) {
+    if (!this.unsavedLeave) {
       next();
     } else {
       const leave = confirm('You have unsaved changes. Are you sure you want to leave?');
