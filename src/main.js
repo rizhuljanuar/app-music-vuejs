@@ -10,6 +10,9 @@ import router from './router'
 import VeeValidatePlugin from '@/includes/validation'
 import Icon from '@/directive/icon'
 import i18n from '@/includes/i18n';
+import { registerSW } from 'virtual:pwa-register';
+
+registerSW({ immediate: true });
 
 let app;
 
